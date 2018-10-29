@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Menu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="uvodniTekst">\nKonačni automat je diskretni matematički model koji se sastoji od konačnog broja stanja, prijelaza između tih stanja, i akcija koje obavlja.</string>
+    <string name="uvodOAutomatima">\nUvod\n\nRad mnogih tehničkih sistema može se opisati nekim konačnim skupom mogućih stanja, pri čemu su prijelazi sistema iz postojećeg u neko novo stanje rezultat reakcije na neke vanjske dogadaje. Imajući u vidu prethodno rečeno, možemo reći da je teorija konačnih automata vrlo važna sa aspekta projektiranja mnogih tehničkih sistema. Prednost modeliranja sistema konačnim brojem stanja ogleda se u mogućnosti realizacije sistema pomoću konačnih resursa. Isto tako, konačni automati imaju svoju ulogu i u modeliranju netehničkih sistema iz različitih područja ljudske djelatnosti kao što su: biologija, medicina, psihologija itd.</string>
+<string name="definicijaDKA">1. Deﬁnicija determinističkog konačnog automata \n\nOsnovni model konačnnog automata je deterministički konačni automat (DKA). U svakom koraku konačni automat je u jednom od stanja, pri čemu je broj mogućih stanja konačan. Deﬁnicija \n Deterministički konačni automat M formalno je deﬁniran sljedećom 5-orkom:\n\n M = (Q,Σ,δ,q0,F), gdje je: \n\n• Q konačan skup stanja; \n• Σ konačan skup ulaznih simbola; \n• δ funkcija prijelaza Q×Σ → Q; \n• q0 početno stanje, q0 ∈ Q; \n• F skup prihvatljivih stanja, F ∈ Q. \n\nFunkcija prijelaza δ deﬁnira novo stanje q na temelju trenutnog stanja p i čitanja ulaznog simbola a:
+q = δ(p,a).\nFunkcije prijelaza se mogu opisati tabelarno ili pomoću dijagrama. Na dijagramima se obično stanja prikazuju kružićima, dok se prijelazi prikazuju usmjerenim linijama koje su označene pročitanim ulaznim simbolom.
+\nNa slici ispod je ilustriran prijelaz iz stanja p u stanje q, za pročitani ulazni simbol a.</string>
+    <string name="action_settings">Settings</string>
+    <string name="konacniAutomati">       \n     Konačni automati
+\n\nKonačni automat je apstraktni matematički model mašine koja obavlja izračunavanje na
+temelju nekog ulaza. Mašina se može nalaziti u jednom od konačno mnogo mogućih
+stanja, pri cemu se izračunavanje obavlja koristeći niz prijelaza iz jednog u neko drugo
+ili ponekad isto stanje.
+    \nModel konačnog automata je prikazan na slici ispod. Na ulaznoj traci se nalazi niz
+simbola iz alfabeta Σ. Prije nego konačni automat primi neku ulaz, on se nalazi u
+tzv. početnom stanju . Upravljačka jedinica se nalazi u jednom od konačnog broja
+stanja, te pomoću glave za čitanje upravljačka jedinica čita simbole sa ulazne trake.
+\nGlava za čitanje se pri radu konačnog automata pomjera udesno i može samo čitati
+simbole sa ulazne trake, ali ih ne može pisati. Upravljačka jedinica pamti samo stanje
+u kojem se automat trenutno nalazi. Kada upravljačka jedinica u nekom stanju q
+procita ulazni simbol a, tada promijeni trenutno stanje u novo stanje δ(q, a) i pomjeri
+glavu za čitanje za jedno mjesto udesno. Ako je novo stanje prihvatljivo , konačni
+automat prihvaća do tada pročitani podniz simbola, ne uključujući simbol na kojem
+je postavljena glava za čitanje. \nUsuprotnom, ako novo stanje nije prihvatljivo, konačni
+automat ne prihvaća do tada pročitani podniz simbola. Kada se glava za čitanje pomjeri
+iza krajnjeg desnog simbola, niz simbola koji se nalazi na traci se prihvaća ili ne prihvaća.
+    \nDrugim riječima, model konačnog automata predstavlja model računarstva koji kao
+rezultat može generirati samo dva izlaza: ”da” ili ”ne”.</string>
+    <string name="definicije">Čitanjem simbola sa ulazne trake konačni automat svoj rad nastavlja mijenjajući trenutno stanje u skladu s
+ funkcijom prijelaza. Slijeđenjem usmjerenih linija označenih simbolima sa ulazne trake možemo na dijagramu
+pratiti proces izračunavanja.
+
+\n\nDeﬁnicija 2.2. \nNeka je zadat neki konačni automat M = (Q,Σ,δ,q0,F). Deﬁniramo proširenu funkciju prijelaza δ∗
+δ∗ : Q×Σ∗ → Q, na sljedeći način: \n1. δ∗(q,ε ) = q, za svakiq∈ Q; \n2. za bilo koje stanje q ∈ Q,
+za bilo koji niz ulaznih simbola w ∈ Σ∗ i za bilo koji ulazni simbol a∈ Σ,vrijedi: \nδ∗(q,wa) = δ(δ∗(q,w),a).
+
+\n\nDeﬁnicija 2.3. \nNeka je zadan deterministički konačni automat M = (Q,Σ,δ,q0,F),kao i ulazni niz simbola
+w∈ Σ∗. Kažemo da automat M prihvaća ulazni niz simbola w, ako vrijedi: δ∗(q0,w)∈ F. \nUsuprotnom, ako vrijedi:
+ δ∗(q0,w)  F, tada kažemo da automat M ne prihvaća riječ w. Jezik kojeg prihvaća automat M je sljedeći skup:
+ L(M) = {w∈ Σ∗|δ∗(q0,w)∈ F}. Ako je L jezik nad alfabetom Σ,automat M prihvaća jezik L ako i samo ako je L = L(M).
+
+
+\n\nDeﬁnicija3.2. \nNedeterministički konačni automat(NKA) formalno je deﬁniran sljedećom 5-orkom:
+NKA= (Q,Σ,δ,q0,F), gdje je: \n\n• Q konačan skup stanja \n• Σ konačan skup ulaznih simbola \n• δ funkcija prijelaza,
+δ : Q×Σ →2Q; \n• q0 početno stanje, q0 ∈ Q; \n• F skup prihvatljivih stanja, F ⊆ Q.
+\n\nDa bismo slično kao kod DKA mogli koristiti i odgovarajući izraz oblika P = δ∗(q,x),
+koji će predstavljati skup krajnjih stanja P⊆2Q, u koje će preći automat koji u nekom stanju q ∈ Q primi niz
+simbola (riječ) x ∈ Σ∗, deﬁnicijom 3.3 ćemo uvesti proširenu funkciju prijelaza koju ćemo označavati sa δ∗.
+
+\n\nDeﬁnicija3.3. \nNeka je zadat nedeterministički konačni automat M = (Q,Σ,δ,q0,F). Deﬁniramo proširenu funkciju
+prijelaza δ∗ : Q×Σ∗ →2Q, na sljedeći način: \n1. Za svaki q∈ Q, δ∗(q,ε ) = {q}; \n2. Za svaki q∈ Q, x∈ Σ∗ i svaki
+σ∈ Σ, δ∗(q,xσ) = {δ(p,σ )|p∈δ∗(q,x)}.  \nIzrazom(1) je deﬁnirano da nije moguće promijeniti stanje bez čitanja
+barem jednog ulaznog simbola. Izrazom (2) je zadano na koji način se izračunava skup stanja u koja prelazi NKA
+čitanjem simbola niza xσ. Prema tom izrazu prvo se izračunava skup stanja δ∗(q,x), u koja prelazi NKA iz stanja
+q čitanjem niza simbola x, a nakon toga se računa unija skupova δ(p,σ) za sva stanja p∈δ∗(q,x) i simbol σ.
+
+
+\n\nDeﬁnicija3.4. \nNedeterministički konačni automat s ε-prijelazima (ε-NKA) formalno se deﬁnira sljedećom petorkom:
+ε−NKA= (Q,Σ,δ,q0,F), gdje je: \nQ konačan skup stanja; \nΣ konačan skup ulaznih simbola; \nδ funkcija prijelaza,
+δ : Q×(Σ∪{ε})→2Q; \nq0 početno stanje, q0 ∈ Q; \nF skup prihvatljivih stanja, F ⊆ Q.
+
+\n\nDeﬁnicija3.5. \nNeka je M = (Q,Σ,δ,q0,F) neki ε-NKA. Deﬁniramo proširenu funkciju prijelaza: δ∗ : Q×Σ∗ →2Q, na
+sljedeći način: \n1. Za svako stanje q∈ Q, δ∗(q,ε ) = ε−closure({q}) \n2. Za svako stanje q∈ Q, svaku riječ w∈ Σ∗,
+i svaki simbol σ∈ Σ δ∗(q,wσ) = ε−closure{δ(p,σ )|p∈δ∗(q,w)} \nZa neku riječ w∈ Σ∗ kažemo da je automat M prihvaća
+ ako vrijedi: δ∗(q0,w)∩F ∅. Jezik L(M) je jezik svih riječi koje prihvaća automat M.</string>
+    <string name="title_activity_nav">navActivity</string>
+</resources>

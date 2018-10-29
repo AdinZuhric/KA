@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bijela">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/uvodAutomati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="@string/uvodOAutomatima"
+
+            android:textIsSelectable="false" />
+    <TextView
+        android:id="@+id/konacniAutomati"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uvodAutomati"
+        android:text="@string/konacniAutomati"/>
+        <ImageView
+            android:id="@+id/slikaModela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/konacniAutomati"
+            android:src="@drawable/modelkonacnogautomata"/>
+    <TextView
+        android:id="@+id/defDka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="left|center"
+        android:layout_below="@id/slikaModela"
+        android:text="@string/definicijaDKA" />
+
+<ImageView
+    android:id="@+id/slikaPrijelaz"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/defDka"
+    android:src="@drawable/slikaprijelaz"/>
+        <TextView
+            android:id="@+id/textKruzici"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slikaPrijelaz"
+            android:text="Nadalje, na dijagramima se obično početno stanje prikazuje kružićem na kojeg pokazuje usmjerena linija koja
+ne dolazi iz nekog drugog stanja, dok se prihvatljiva stanja prikazuju dvostrukim kružićima."/>
+        <ImageView
+            android:id="@+id/slikaStanja2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textKruzici"
+            android:src="@drawable/slikapocetnogikrajnjeg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slikaStanja2"
+            android:text="@string/definicije"/>
+</RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

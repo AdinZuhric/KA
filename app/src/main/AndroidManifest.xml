@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.adin.ka">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pitanje1activity"
+            android:label="Kviz" />
+        <activity
+            android:name=".pitanje2activity"
+            android:label="Kviz" />
+        <activity
+            android:name=".pitanje3activity"
+            android:label="Kviz" />
+        <activity
+            android:name=".pitanje4activity"
+            android:label="Kviz" />
+        <activity
+            android:name=".pitanje5activity"
+            android:label="Kviz" />
+        <activity
+            android:name=".navActivity"
+            android:label="@string/title_activity_nav"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivitySimulacija"
+            android:label="Simulacija" />
+        <activity android:name=".teorijaActivity"
+            android:label="Teorija"/>
+        <activity android:name=".zadaciActivity"
+            android:label="Zadaci"/>
+        <activity android:name=".uvodActivity" />
+        <activity android:name=".definicijeActivity"
+            android:label="Poglavlje 1">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bijela">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/zadatak1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\n1. Jezik L nad abecedom {0, 1, 2} sadrži sve nizove u kojima nema uzastopnog ponavljanja znaka 1. Konstruirati konačni automat koji prihvaća nizove iz jezika L."/>
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/zadatak1"
+                android:text="Prikaži rješenje"
+                android:onClick="rjesenje1"/>
+
+
+            <ImageView
+                android:id="@+id/rjesenje1"
+                android:layout_below="@id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/slika1rjesenje"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rjesenje1"
+                android:id="@+id/zadatak2"
+                android:text="\n2. Konstruisati DKA koji sadrži podriječ baabb."/>
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/zadatak2"
+                android:text="Prikaži rješenje"
+                android:onClick="rjesenje2"/>
+
+
+            <ImageView
+                android:id="@+id/rjesenje2"
+                android:layout_below="@id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/slika2rjesenje"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rjesenje2"
+                android:id="@+id/zadatak3"
+                android:text="\n3. Konstruisati DKA koji sadrži dva simbola b."/>
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/zadatak3"
+                android:text="Prikaži rješenje"
+                android:onClick="rjesenje3"/>
+
+
+            <ImageView
+                android:id="@+id/rjesenje3"
+                android:layout_below="@id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/slika3rjesenje"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rjesenje3"
+                android:id="@+id/zadatak4"
+                android:text="\n4. Konstruisati NKA koji prihvata jezik definiran regularnim izrazom podriječ a(bba+bb)*b."/>
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/zadatak4"
+                android:text="Prikaži rješenje"
+                android:onClick="rjesenje4"/>
+
+
+            <ImageView
+                android:id="@+id/rjesenje4"
+                android:layout_below="@id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/slika4rjesenje"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rjesenje4"
+                android:id="@+id/zadatak5"
+                android:text="\n5. Konstruisati ɛ-NKA koji prihvata jezik definiran regularnim izrazom a(ba)*(b+bab)*."/>
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/zadatak5"
+                android:text="Prikaži rješenje"
+                android:onClick="rjesenje5"/>
+
+
+            <ImageView
+                android:id="@+id/rjesenje5"
+                android:layout_below="@id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/slika5rjesenje"
+                />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

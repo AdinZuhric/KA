@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/pitanje3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="\n\nČitanjem nekog ulaznog simbola, NKA može preći u:\n\n"/>
+    <RadioGroup
+        android:id="@+id/rjesenja3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pitanje3"
+        android:gravity="center">
+        <RadioButton
+            android:id="@+id/rB1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="samo jedno stanje"/>
+        <RadioButton
+            android:id="@+id/rB2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jedno ili više stanja"/>
+        <RadioButton
+            android:id="@+id/rB3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nula, jedno ili više stanja"/>
+
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rjesenja3"
+        android:text="Dalje"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="odgovor3"
+        android:gravity="center"/>
+
+</RelativeLayout>

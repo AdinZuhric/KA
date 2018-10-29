@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bijela">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/slikaENKA"
+        android:src="@drawable/enka"/>
+    <TextView
+        android:id="@+id/pitanje5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_below="@id/slikaENKA"
+        android:text="\n\nDa li automat prihvaća riječ abbab:\n\n"/>
+
+    <RadioGroup
+        android:id="@+id/rjesenja5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pitanje5"
+        android:gravity="center">
+        <RadioButton
+            android:id="@+id/rb51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="DA"/>
+        <RadioButton
+            android:id="@+id/rb52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NE"/>
+
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rjesenja5"
+        android:text="Dalje"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="odgovor5"
+
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/bodoviSkor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/button5"
+        android:text=""
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.adin.ka.MainActivitySimulacija">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true">
+
+
+    <LinearLayout
+android:id="@+id/buttoni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dodajKrug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dodaj stanje"
+            android:onClick="opcija1"
+            android:background="#eae5e5"
+
+            android:layout_weight="1"
+            android:textColor="#060606"
+             />
+
+        <Button
+            android:id="@+id/dodajGranu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dodaj prelaz"
+            android:visibility="visible"
+            android:textColor="#040404"
+            android:background="#f1efef"
+            android:layout_weight="1"
+            android:onClick="opcija2"
+            android:layout_gravity="right"/>
+
+
+
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_below="@id/buttoni"
+    android:orientation="vertical">
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:id="@+id/unosStringa"
+                >
+                <EditText
+                    android:id="@+id/unesiString"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:background="#e0e0dd"
+                     />
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Provjeri string"
+                    android:visibility="visible"
+                    android:textColor="#040404"
+                    android:background="#eff0f1"
+                    android:layout_weight="1"
+android:onClick="provjeriString"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/unosStringa">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:id="@+id/prelazakStanja"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+</RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

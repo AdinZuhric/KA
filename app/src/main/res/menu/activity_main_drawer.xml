@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/uvod"
+
+            android:title="Uvod" />
+
+        <item
+            android:id="@+id/teorija"
+
+            android:title="Teorija" />
+        <item
+            android:id="@+id/zadaci"
+
+            android:title="Zadaci" />
+        <item
+            android:id="@+id/kviz"
+
+            android:title="Kviz"/>
+            <item
+                android:id="@+id/simulacija"
+                android:title="Simulacija"
+        />
+    </group>
+
+
+
+</menu>
